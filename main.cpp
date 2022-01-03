@@ -46,6 +46,11 @@ void background(string screen[],int a) {
 
 void obstacle(string screen[], int type, int a) {
     string
+        floor[3]={
+            "                         ",
+            "                         ",
+            "floorfloorfloorfloorfloor"
+        },
         obstacle[9][3] = {
             {/*type0*/"   ","   "," o "},{/*type1*/"   "," o "," o "},{/*type2*/"   "," o ","o o"},
             {/*type3*/"   "," o ","o  "},{/*type4*/"   "," o ","  o"},{/*type5*/"   ","   ","oo "},
