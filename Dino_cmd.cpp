@@ -245,7 +245,7 @@ int main()
     }
     string line, Keep="Keep pushing ",does="new record! ";
     ifstream myFile;
-    myFile.open("test.txt");
+    myFile.open("highest_score.txt");
     while (getline(myFile, line)) {
         x=line;
     }
@@ -283,10 +283,10 @@ int main()
         for (i = 0;i <= newx;i++) {
             screen_end[13][48 - newx / 2 + i] = ts[i];
         }
-        string fileName="test,txt";
+        string fileName="highest_score,txt";
         remove(fileName.c_str());
         ofstream newFile;
-        newFile.open("test.txt");
+        newFile.open("highest_score.txt");
         newFile << x;
         newFile.close();
     }
